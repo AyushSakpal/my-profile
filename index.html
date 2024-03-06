@@ -6,6 +6,8 @@
     <title>My Profile</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- G -->
+
   </head>
   <style>
 .Summary{
@@ -82,8 +84,30 @@
       text-align: center;
       border: 2px solid black; /* Add border to cells */
     }
-    
+
+    #listSummary, #copyright{
+      font-family: "Poppins", sans-serif;
+    }
+    #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+    }
+    .roles{
+      list-style-type: lower-alpha;
+    }
+    .roles{
+      padding-top: 1rem;
+    }
+    #projectDesc::selection{
+      background-color: rgb(241, 193, 104);
+    }
+
   </style>
+  </head>
+  </body>
   
   <!-- Header Section -->
 <header style="color:#1592b1; background-color: aquamarine;">
@@ -97,17 +121,18 @@
 </header>
   
 
-      
     </header>
 <br>
     <!-- Navigation Section -->
-    <nav style="color: #f50343;background-color: darkcyan;">
-      <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="techstack.html">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="projectdetails.html">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="Education Section.html">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="Personal details.html">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="others.html">OTHERS</a>
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+      </ul>
     </nav>
 
     <!-- HOME Section -->
