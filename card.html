@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #photo {
+            border-radius: 200px;
+            bottom: 100px;
+            border-radius: 100px;
+            display: block; /* Ensures the image is displayed as a block element */
+            margin: 0 auto; 
+            /* Assuming you want to style an image with id "photo" */
+        }
+        #card {
+            width: 500px;
+            height: 450px;
+            border: 1px solid rgb(172, 167, 160);
+            box-shadow: 13px 13px 10px -8px rgb(82,80,80);
+            background-color: #1f7a91;
+            border-radius: 20px;
+            position: relative;
+            /* Assuming you want to style an element with id "card" */
+        }
+        #text {
+           
+            color: #FFFFFA;
+            border-radius: 50px;
+            bottom: 0.5px;
+            text-align: center;
+            position: relative;
+            padding: 50px 15px;
+           
+            /* Assuming you want to style an element with id "text" */
+        }
+        #text1{
+            background-color: #498e94;
+            color: #FFFFFA;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            padding: 10px 140px;
+            position: absolute;
+            bottom: 4px;
+            right: auto;
+            left: 3px;;
+        }
+    </style>
+</head>
+<body>
+    <!-- section -->
+    <section id="card">
+        <!-- Assuming this is your image -->
+        <img id="photo" src="assets/Image.png" alt="William Henry Gates">
+        <section id="text">
+            <h2>WILLIAM HENRY GATES</h2>
+            <h2>Microsoft Co-founder</h2>
+        </section>
+        <!-- section 2 -->
+        <section id="text1">
+            <h3>FOR <br>PROJECT AND PEOPLE <br> TRANSFORMATION</h3>
+        </section>
+    </section>
+</body>
+</html>
